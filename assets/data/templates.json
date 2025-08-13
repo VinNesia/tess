@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Website Cafe Modern",
+    "price": "Rp 500.000",
+    "category": "Cafe",
+    "image": "img/cafe.webp",
+    "demo": "https://cafe-template.vercel.app",
+    "description": "Template elegan untuk cafe dengan desain responsif.",
+    "popularity": 8
+  },
+  {
+    "id": 2,
+    "name": "Website Resto Premium",
+    "price": "Rp 750.000",
+    "category": "Resto",
+    "image": "img/resto.webp",
+    "demo": "https://resto-template.vercel.app",
+    "description": "Website profesional untuk restoran, siap pakai.",
+    "popularity": 7
+  },
+  {
+    "id": 3,
+    "name": "Website UMKM Keren",
+    "price": "Rp 300.000",
+    "category": "UMKM",
+    "image": "img/umkm.webp",
+    "demo": "https://umkm-template.vercel.app",
+    "description": "Template simpel dan modern untuk UMKM.",
+    "popularity": 6
+  }
+]
