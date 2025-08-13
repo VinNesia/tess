@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="">
+  <meta name="keywords" content="template website, beli template">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://yourdomain.com/detail.html">
+  <link rel="preload" href="assets/data/templates.json" as="fetch" crossorigin="anonymous">
+  <link rel="preload" href="assets/css/style.css" as="style">
+  <title>Detail Template</title>
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/aos.css">
+  <link rel="stylesheet" href="vendor/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Navigasi utama">
+    <div class="container">
+      <a class="navbar-brand" href="#">Template Marketplace</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigasi">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Detail Section -->
+  <section class="detail py-5" aria-label="Detail template">
+    <div class="container">
+      <div id="loadingSpinner" class="text-center" role="alert" aria-live="polite" style="display: block;">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Memuat...</span>
+        </div>
+      </div>
+      <div class="row" id="templateDetail" data-aos="fade-up"></div>
+      <!-- Form Checkout -->
+      <div class="row mt-4">
+        <div class="col-md-8 col-sm-12 mx-auto">
+          <h3 id="checkout-title">Form Checkout</h3>
+          <form id="checkoutForm" aria-label="Formulir checkout template">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="name" required aria-required="true" aria-describedby="nameError">
+              <div id="nameError" class="invalid-feedback">Nama harus diisi.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required aria-required="true" aria-describedby="emailError">
+              <div id="emailError" class="invalid-feedback">Email harus valid.</div>
+            </div>
+            <div class="mb-3">
+              <label for="notes" class="form-label">Catatan Tambahan</label>
+              <textarea class="form-control" id="notes" rows="3" aria-describedby="notesHelp"></textarea>
+              <div id="notesHelp" class="form-text">Opsional: Tambahkan catatan untuk kebutuhan khusus.</div>
+            </div>
+            <button type="submit" class="btn btn-success w-100 w-sm-auto" aria-label="Checkout ke WhatsApp">Checkout ke WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json" id="structuredData"></script>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 Template Marketplace. All rights reserved.</p>
+  </footer>
+
+  <script src="vendor/bootstrap.min.js"></script>
+  <script src="vendor/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
