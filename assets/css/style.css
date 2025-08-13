@@ -2,7 +2,9 @@
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  color: #333; /* Kontras tinggi */
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 /* Navbar */
@@ -33,6 +35,7 @@ body {
   max-width: 300px;
   margin: 0 auto;
   font-size: 1rem;
+  width: 100%; /* Pastikan full-width di mobile */
 }
 
 /* Template Grid */
@@ -79,7 +82,7 @@ body {
 .detail .btn,
 #checkoutForm .btn,
 #contactForm .btn {
-  padding: 0.75rem 1.5rem; /* Touch target besar */
+  padding: 0.75rem 1.5rem;
   font-size: 1rem;
 }
 
@@ -94,7 +97,7 @@ body {
 
 .invalid-feedback {
   display: none;
-  color: #dc3545; /* Kontras tinggi */
+  color: #dc3545;
 }
 
 .form-control:invalid + .invalid-feedback {
@@ -158,6 +161,7 @@ footer {
 
   .btn {
     width: 100%;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -176,6 +180,10 @@ footer {
 
   .pagination .page-link {
     padding: 0.5rem 0.75rem;
+  }
+
+  .modal-dialog {
+    margin: 0.5rem;
   }
 }
 
